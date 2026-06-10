@@ -1,0 +1,32 @@
+---
+Language: C
+BasedOnStyle: LLVM
+IndentWidth: 2
+TabWidth: 2
+UseTab: Never
+ColumnLimit: 150
+AlignAfterOpenBracket: Align
+BinPackArguments: false
+BinPackParameters: false
+AllowAllArgumentsOnNextLine: false
+AllowAllParametersOfDeclarationOnNextLine: false
+SortIncludes: true
+IncludeBlocks: Regroup
+BreakBeforeTernaryOperators: false
+InsertBraces: true
+BreakBeforeBraces: Allman
+AllowShortFunctionsOnASingleLine: None
+MaxEmptyLinesToKeep: 1
+SeparateDefinitionBlocks: Always
+PointerAlignment: Left
+SpaceAfterCStyleCast: false
+SpaceBeforeAssignmentOperators: true
+SpaceBeforeParens: ControlStatements
+SpacesInCStyleCastParentheses: false
+LineEnding: CRLF
+ReflowComments: false
+BreakConstructorInitializers: AfterColon
+ConstructorInitializerAllOnOneLineOrOnePerLine: true
+ConstructorInitializerIndentWidth: 2
+InsertNewlineAtEOF: true
+...
