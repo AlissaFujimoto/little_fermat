@@ -1,6 +1,6 @@
 # Little Fermat: 16-bit Wieferich Prime Hunter
 
-A hyper-optimized, **zero-allocation** ANSI C application designed to exhaustively search the 16-bit integer space to identify all **Wieferich Primes**.
+A hyper-optimized, **zero-allocation** C99 application designed to exhaustively search the 16-bit integer space to identify all **Wieferich Primes**.
 
 ## Mathematical Background
 

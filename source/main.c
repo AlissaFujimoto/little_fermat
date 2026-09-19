@@ -1,8 +1,9 @@
+#include <inttypes.h>
 #include <stdbool.h>
 #include <stdint.h>
 #include <stdio.h>
 
-bool is_prime16(uint32_t n)
+static inline bool is_prime16(uint32_t n)
 {
   if (n < 2)
   {
@@ -26,7 +27,7 @@ bool is_prime16(uint32_t n)
   return true;
 }
 
-uint64_t pow_mod_64(uint64_t base, uint64_t exp, uint64_t m)
+static inline uint64_t pow_mod_64(uint64_t base, uint64_t exp, uint64_t m)
 {
   uint64_t res = 1;
   base %= m;
@@ -44,7 +45,7 @@ uint64_t pow_mod_64(uint64_t base, uint64_t exp, uint64_t m)
 
 int main(void)
 {
-  uint32_t max_p = UINT16_MAX;
+  const uint32_t max_p = UINT16_MAX;
   uint32_t count = 0;
 
   printf("Initializing Wieferich Hunter...\n");
@@ -61,14 +62,14 @@ int main(void)
 
       if (res == 1)
       {
-        printf(">>> WIEFERICH PRIME FOUND: %u <<<\n", p);
+        printf(">>> WIEFERICH PRIME FOUND: %" PRIu32 " <<<\n", p);
         count++;
       }
     }
   }
 
   printf("\n--- SEARCH COMPLETE ---\n");
-  printf("Total Wieferich Primes found under %d: %u\n", UINT16_MAX, count);
+  printf("Total Wieferich Primes found under %" PRIu16 ": %" PRIu32 "\n", UINT16_MAX, count);
 
   return 0;
 }
