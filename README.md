@@ -5,10 +5,10 @@ A hyper-optimized, **zero-allocation** ANSI C application designed to exhaustive
 ## Mathematical Background
 
 **Fermat's Little Theorem** states that if $p$ is a prime number, then for any integer $a$ not divisible by $p$:
-$$ a^{p-1} \equiv 1 \pmod p $$
+$$a^{p-1} \equiv 1 \pmod{p}$$
 
 A **Wieferich Prime** is a rare prime number $p$ that satisfies a much stricter condition. Specifically, it must satisfy the congruence using the *square* of the prime as the modulus:
-$$ 2^{p-1} \equiv 1 \pmod{p^2} $$
+$$2^{p-1} \equiv 1 \pmod{p^2}$$
 
 These primes are incredibly rare. In the entire 16-bit integer space (up to $65,535$), only two primes satisfy this condition: **1093** and **3511**.
 
